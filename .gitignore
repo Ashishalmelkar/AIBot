@@ -26,3 +26,9 @@ fastlane/screenshots
 
 # Logs
 *.log
+# macOS
+.DS_Store
+
+# Xcode user-specific
+*.xcuserstate
+*.xcuserdata/
