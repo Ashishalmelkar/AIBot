@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7553031D2ECC7B6700A94642 /* wificonnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553031C2ECC7B6700A94642 /* wificonnectionViewController.swift */; };
+		75CA65662ECB75370013DFD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA65652ECB75370013DFD7 /* AppDelegate.swift */; };
+		75CA65682ECB75370013DFD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA65672ECB75370013DFD7 /* SceneDelegate.swift */; };
+		75CA656A2ECB75370013DFD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA65692ECB75370013DFD7 /* ViewController.swift */; };
+		75CA656D2ECB75370013DFD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CA656B2ECB75370013DFD7 /* Main.storyboard */; };
+		75CA656F2ECB753A0013DFD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CA656E2ECB753A0013DFD7 /* Assets.xcassets */; };
+		75CA65722ECB753A0013DFD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CA65702ECB753A0013DFD7 /* LaunchScreen.storyboard */; };
+		75CA657A2ECB7D4A0013DFD7 /* BluetoothCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA65792ECB7D4A0013DFD7 /* BluetoothCell.swift */; };
+		75CA657C2ECB7D5F0013DFD7 /* WiFiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA657B2ECB7D5F0013DFD7 /* WiFiCell.swift */; };
+		75CA657E2ECB82870013DFD7 /* WiFiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA657D2ECB82870013DFD7 /* WiFiViewController.swift */; };
+		BC1623B32ED8266F00813609 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1623B22ED8266F00813609 /* BluetoothManager.swift */; };
+		BC1623B72ED8AAF200813609 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1623B62ED8AAF200813609 /* LoaderView.swift */; };
+		BC1623B92ED8D3AB00813609 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1623B82ED8D3AB00813609 /* DashBoardViewController.swift */; };
+		BC8DECB12EDED4F8009A0206 /* client_501557867058-qlfujdct9jailenimgnhhnia41uelev0.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC8DECB02EDED4F8009A0206 /* client_501557867058-qlfujdct9jailenimgnhhnia41uelev0.apps.googleusercontent.com.plist */; };
+		BC8DECB42EDED565009A0206 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = BC8DECB32EDED565009A0206 /* GoogleSignIn */; };
+		BC8DECB62EDED565009A0206 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BC8DECB52EDED565009A0206 /* GoogleSignInSwift */; };
+		BC8DECB82EDEDF2F009A0206 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DECB72EDEDF2F009A0206 /* LoginViewController.swift */; };
+		BC9251F02EF0069100730BD5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9251EF2EF0069100730BD5 /* TabBarController.swift */; };
+		BC9251F22EF0073800730BD5 /* ChildProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9251F12EF0073800730BD5 /* ChildProfileViewController.swift */; };
+		BC9251F42EF0076C00730BD5 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9251F32EF0076C00730BD5 /* StoryViewController.swift */; };
+		BC9251F62EF0078600730BD5 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9251F52EF0078600730BD5 /* ConversationViewController.swift */; };
+		BC9251F82EF007B000730BD5 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9251F72EF007B000730BD5 /* DeviceViewController.swift */; };
+		BC9251FA2EF0807000730BD5 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9251F92EF0807000730BD5 /* StoryCell.swift */; };
+		BC9251FC2EF1623700730BD5 /* conversationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9251FB2EF1623700730BD5 /* conversationTableCell.swift */; };
+		BC9251FE2EF1624C00730BD5 /* converstionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9251FD2EF1624C00730BD5 /* converstionHistory.swift */; };
+		BC9252002EF1D7F300730BD5 /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9251FF2EF1D7F300730BD5 /* InstructionViewController.swift */; };
+		BC9252022EF1D85500730BD5 /* ThingsToTalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9252012EF1D85500730BD5 /* ThingsToTalkCell.swift */; };
+		BC9252042EF1D88800730BD5 /* ThingsToAvoidCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9252032EF1D88800730BD5 /* ThingsToAvoidCell.swift */; };
+		BC9252062EF1F15A00730BD5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9252052EF1F15A00730BD5 /* ProfileViewController.swift */; };
+		BCA7BCA92EF2EAAE00DA0040 /* MemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7BCA82EF2EAAE00DA0040 /* MemoryViewController.swift */; };
+		BCA7BCAB2EF2EAD300DA0040 /* MemoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA7BCAA2EF2EAD300DA0040 /* MemoryCell.swift */; };
+		BCB328E82ED8FC7B007D826C /* FluffDevicesDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCB328E62ED8FC7B007D826C /* FluffDevicesDataModel.xcdatamodeld */; };
+		BCB328EA2ED8FEA1007D826C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB328E92ED8FEA1007D826C /* CoreDataManager.swift */; };
+		BCB328EC2ED90156007D826C /* DashBoardTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB328EB2ED90156007D826C /* DashBoardTableCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7553031C2ECC7B6700A94642 /* wificonnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wificonnectionViewController.swift; sourceTree = "<group>"; };
+		75CA65622ECB75370013DFD7 /* Fluffbotics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluffbotics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CA65652ECB75370013DFD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75CA65672ECB75370013DFD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		75CA65692ECB75370013DFD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75CA656C2ECB75370013DFD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75CA656E2ECB753A0013DFD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75CA65712ECB753A0013DFD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75CA65732ECB753A0013DFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75CA65792ECB7D4A0013DFD7 /* BluetoothCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothCell.swift; sourceTree = "<group>"; };
+		75CA657B2ECB7D5F0013DFD7 /* WiFiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiCell.swift; sourceTree = "<group>"; };
+		75CA657D2ECB82870013DFD7 /* WiFiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiViewController.swift; sourceTree = "<group>"; };
+		BC1623B22ED8266F00813609 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		BC1623B62ED8AAF200813609 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		BC1623B82ED8D3AB00813609 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		BC8DECB02EDED4F8009A0206 /* client_501557867058-qlfujdct9jailenimgnhhnia41uelev0.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "client_501557867058-qlfujdct9jailenimgnhhnia41uelev0.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
+		BC8DECB72EDEDF2F009A0206 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC9251EF2EF0069100730BD5 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BC9251F12EF0073800730BD5 /* ChildProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildProfileViewController.swift; sourceTree = "<group>"; };
+		BC9251F32EF0076C00730BD5 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		BC9251F52EF0078600730BD5 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		BC9251F72EF007B000730BD5 /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+		BC9251F92EF0807000730BD5 /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		BC9251FB2EF1623700730BD5 /* conversationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conversationTableCell.swift; sourceTree = "<group>"; };
+		BC9251FD2EF1624C00730BD5 /* converstionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = converstionHistory.swift; sourceTree = "<group>"; };
+		BC9251FF2EF1D7F300730BD5 /* InstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		BC9252012EF1D85500730BD5 /* ThingsToTalkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsToTalkCell.swift; sourceTree = "<group>"; };
+		BC9252032EF1D88800730BD5 /* ThingsToAvoidCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsToAvoidCell.swift; sourceTree = "<group>"; };
+		BC9252052EF1F15A00730BD5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BCA7BCA82EF2EAAE00DA0040 /* MemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryViewController.swift; sourceTree = "<group>"; };
+		BCA7BCAA2EF2EAD300DA0040 /* MemoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCell.swift; sourceTree = "<group>"; };
+		BCB328E72ED8FC7B007D826C /* FluffDevicesDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FluffDevicesDataModel.xcdatamodel; sourceTree = "<group>"; };
+		BCB328E92ED8FEA1007D826C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		BCB328EB2ED90156007D826C /* DashBoardTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardTableCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75CA655F2ECB75370013DFD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8DECB42EDED565009A0206 /* GoogleSignIn in Frameworks */,
+				BC8DECB62EDED565009A0206 /* GoogleSignInSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75CA65592ECB75370013DFD7 = {
+			isa = PBXGroup;
+			children = (
+				75CA65642ECB75370013DFD7 /* Fluffbotics */,
+				75CA65632ECB75370013DFD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75CA65632ECB75370013DFD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75CA65622ECB75370013DFD7 /* Fluffbotics.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75CA65642ECB75370013DFD7 /* Fluffbotics */ = {
+			isa = PBXGroup;
+			children = (
+				75CA65652ECB75370013DFD7 /* AppDelegate.swift */,
+				75CA65672ECB75370013DFD7 /* SceneDelegate.swift */,
+				BC8DECB72EDEDF2F009A0206 /* LoginViewController.swift */,
+				BC9251EF2EF0069100730BD5 /* TabBarController.swift */,
+				BC1623B82ED8D3AB00813609 /* DashBoardViewController.swift */,
+				BCB328EB2ED90156007D826C /* DashBoardTableCell.swift */,
+				BC9251F72EF007B000730BD5 /* DeviceViewController.swift */,
+				75CA65692ECB75370013DFD7 /* ViewController.swift */,
+				BC1623B62ED8AAF200813609 /* LoaderView.swift */,
+				BC1623B22ED8266F00813609 /* BluetoothManager.swift */,
+				75CA657D2ECB82870013DFD7 /* WiFiViewController.swift */,
+				7553031C2ECC7B6700A94642 /* wificonnectionViewController.swift */,
+				75CA65792ECB7D4A0013DFD7 /* BluetoothCell.swift */,
+				75CA657B2ECB7D5F0013DFD7 /* WiFiCell.swift */,
+				BC9251F12EF0073800730BD5 /* ChildProfileViewController.swift */,
+				BC9251F32EF0076C00730BD5 /* StoryViewController.swift */,
+				BC9251F92EF0807000730BD5 /* StoryCell.swift */,
+				BC9251F52EF0078600730BD5 /* ConversationViewController.swift */,
+				BC9251FD2EF1624C00730BD5 /* converstionHistory.swift */,
+				BC9251FB2EF1623700730BD5 /* conversationTableCell.swift */,
+				BCA7BCA82EF2EAAE00DA0040 /* MemoryViewController.swift */,
+				BCA7BCAA2EF2EAD300DA0040 /* MemoryCell.swift */,
+				BC9251FF2EF1D7F300730BD5 /* InstructionViewController.swift */,
+				BC9252012EF1D85500730BD5 /* ThingsToTalkCell.swift */,
+				BC9252032EF1D88800730BD5 /* ThingsToAvoidCell.swift */,
+				BC9252052EF1F15A00730BD5 /* ProfileViewController.swift */,
+				75CA656B2ECB75370013DFD7 /* Main.storyboard */,
+				75CA656E2ECB753A0013DFD7 /* Assets.xcassets */,
+				75CA65702ECB753A0013DFD7 /* LaunchScreen.storyboard */,
+				75CA65732ECB753A0013DFD7 /* Info.plist */,
+				BCB328E62ED8FC7B007D826C /* FluffDevicesDataModel.xcdatamodeld */,
+				BCB328E92ED8FEA1007D826C /* CoreDataManager.swift */,
+				BC8DECB02EDED4F8009A0206 /* client_501557867058-qlfujdct9jailenimgnhhnia41uelev0.apps.googleusercontent.com.plist */,
+			);
+			path = Fluffbotics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75CA65612ECB75370013DFD7 /* Fluffbotics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75CA65762ECB753A0013DFD7 /* Build configuration list for PBXNativeTarget "Fluffbotics" */;
+			buildPhases = (
+				75CA655E2ECB75370013DFD7 /* Sources */,
+				75CA655F2ECB75370013DFD7 /* Frameworks */,
+				75CA65602ECB75370013DFD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fluffbotics;
+			productName = Fluffbotics;
+			productReference = 75CA65622ECB75370013DFD7 /* Fluffbotics.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75CA655A2ECB75370013DFD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					75CA65612ECB75370013DFD7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 75CA655D2ECB75370013DFD7 /* Build configuration list for PBXProject "Fluffbotics" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75CA65592ECB75370013DFD7;
+			packageReferences = (
+				BC8DECB22EDED565009A0206 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 75CA65632ECB75370013DFD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75CA65612ECB75370013DFD7 /* Fluffbotics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75CA65602ECB75370013DFD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CA65722ECB753A0013DFD7 /* LaunchScreen.storyboard in Resources */,
+				BC8DECB12EDED4F8009A0206 /* client_501557867058-qlfujdct9jailenimgnhhnia41uelev0.apps.googleusercontent.com.plist in Resources */,
+				75CA656F2ECB753A0013DFD7 /* Assets.xcassets in Resources */,
+				75CA656D2ECB75370013DFD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75CA655E2ECB75370013DFD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8DECB82EDEDF2F009A0206 /* LoginViewController.swift in Sources */,
+				BCB328E82ED8FC7B007D826C /* FluffDevicesDataModel.xcdatamodeld in Sources */,
+				BC9251F62EF0078600730BD5 /* ConversationViewController.swift in Sources */,
+				75CA657A2ECB7D4A0013DFD7 /* BluetoothCell.swift in Sources */,
+				BC9251FC2EF1623700730BD5 /* conversationTableCell.swift in Sources */,
+				BC9251F02EF0069100730BD5 /* TabBarController.swift in Sources */,
+				BCA7BCA92EF2EAAE00DA0040 /* MemoryViewController.swift in Sources */,
+				BCB328EC2ED90156007D826C /* DashBoardTableCell.swift in Sources */,
+				BC9252002EF1D7F300730BD5 /* InstructionViewController.swift in Sources */,
+				75CA657E2ECB82870013DFD7 /* WiFiViewController.swift in Sources */,
+				BC1623B32ED8266F00813609 /* BluetoothManager.swift in Sources */,
+				BC9252062EF1F15A00730BD5 /* ProfileViewController.swift in Sources */,
+				75CA657C2ECB7D5F0013DFD7 /* WiFiCell.swift in Sources */,
+				75CA656A2ECB75370013DFD7 /* ViewController.swift in Sources */,
+				BCB328EA2ED8FEA1007D826C /* CoreDataManager.swift in Sources */,
+				BC1623B92ED8D3AB00813609 /* DashBoardViewController.swift in Sources */,
+				BCA7BCAB2EF2EAD300DA0040 /* MemoryCell.swift in Sources */,
+				75CA65662ECB75370013DFD7 /* AppDelegate.swift in Sources */,
+				7553031D2ECC7B6700A94642 /* wificonnectionViewController.swift in Sources */,
+				BC9251FE2EF1624C00730BD5 /* converstionHistory.swift in Sources */,
+				75CA65682ECB75370013DFD7 /* SceneDelegate.swift in Sources */,
+				BC9251F22EF0073800730BD5 /* ChildProfileViewController.swift in Sources */,
+				BC9252042EF1D88800730BD5 /* ThingsToAvoidCell.swift in Sources */,
+				BC1623B72ED8AAF200813609 /* LoaderView.swift in Sources */,
+				BC9251F82EF007B000730BD5 /* DeviceViewController.swift in Sources */,
+				BC9252022EF1D85500730BD5 /* ThingsToTalkCell.swift in Sources */,
+				BC9251F42EF0076C00730BD5 /* StoryViewController.swift in Sources */,
+				BC9251FA2EF0807000730BD5 /* StoryCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75CA656B2ECB75370013DFD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75CA656C2ECB75370013DFD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75CA65702ECB753A0013DFD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75CA65712ECB753A0013DFD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75CA65742ECB753A0013DFD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75CA65752ECB753A0013DFD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75CA65772ECB753A0013DFD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9TZ2N3965;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fluffbotics/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to discover nearby devices.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app uses Bluetooth Peripheral to discover nearby devices.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs Wi-Fi information to connect your device";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ash.Fluffboticss;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75CA65782ECB753A0013DFD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9TZ2N3965;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fluffbotics/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to discover nearby devices.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app uses Bluetooth Peripheral to discover nearby devices.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs Wi-Fi information to connect your device";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ash.Fluffboticss;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75CA655D2ECB75370013DFD7 /* Build configuration list for PBXProject "Fluffbotics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CA65742ECB753A0013DFD7 /* Debug */,
+				75CA65752ECB753A0013DFD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75CA65762ECB753A0013DFD7 /* Build configuration list for PBXNativeTarget "Fluffbotics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CA65772ECB753A0013DFD7 /* Debug */,
+				75CA65782ECB753A0013DFD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC8DECB22EDED565009A0206 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC8DECB32EDED565009A0206 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC8DECB22EDED565009A0206 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		BC8DECB52EDED565009A0206 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC8DECB22EDED565009A0206 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		BCB328E62ED8FC7B007D826C /* FluffDevicesDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BCB328E72ED8FC7B007D826C /* FluffDevicesDataModel.xcdatamodel */,
+			);
+			currentVersion = BCB328E72ED8FC7B007D826C /* FluffDevicesDataModel.xcdatamodel */;
+			path = FluffDevicesDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 75CA655A2ECB75370013DFD7 /* Project object */;
+}
