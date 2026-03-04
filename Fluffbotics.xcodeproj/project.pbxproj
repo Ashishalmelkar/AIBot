@@ -398,7 +398,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q9TZ2N3965;
+				DEVELOPMENT_TEAM = A9D83WT525;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fluffbotics/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to discover nearby devices.";
@@ -433,7 +433,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q9TZ2N3965;
+				DEVELOPMENT_TEAM = A9D83WT525;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fluffbotics/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to discover nearby devices.";
