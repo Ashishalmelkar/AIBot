@@ -1,0 +1,63 @@
+name: iOS CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      # This helps us discover your schemes in CI logs
+      - name: List schemes
+        run: |
+          set -e
+          if ls *.xcworkspace 1> /dev/null 2>&1; then
+            echo "Workspace detected"
+            xcodebuild -list -workspace *.xcworkspace
+          elif ls *.xcodeproj 1> /dev/null 2>&1; then
+            echo "Project detected"
+            xcodebuild -list -project *.xcodeproj
+          else
+            echo "No .xcworkspace or .xcodeproj found in repo root."
+            echo "If your iOS project is inside a subfolder, update the workflow paths."
+            exit 1
+          fi
+
+      # Build step (you will set SCHEME after you see it in logs)
+      - name: Build (Simulator)
+        env:
+          SCHEME: YOUR_SCHEME_HERE
+        run: |
+          set -e
+          DEST='platform=iOS Simulator,name=iPhone 15,OS=latest'
+          if ls *.xcworkspace 1> /dev/null 2>&1; then
+            xcodebuild -workspace *.xcworkspace -scheme "$SCHEME" -destination "$DEST" -configuration Debug clean build | tee build.log
+          else
+            xcodebuild -project *.xcodeproj -scheme "$SCHEME" -destination "$DEST" -configuration Debug clean build | tee build.log
+          fi
+
+      # Tests step (will pass even if you add tests later; if no tests, it may just report 0)
+      - name: Test (Simulator)
+        env:
+          SCHEME: YOUR_SCHEME_HERE
+        run: |
+          set -e
+          DEST='platform=iOS Simulator,name=iPhone 15,OS=latest'
+          if ls *.xcworkspace 1> /dev/null 2>&1; then
+            xcodebuild -workspace *.xcworkspace -scheme "$SCHEME" -destination "$DEST" test | tee test.log
+          else
+            xcodebuild -project *.xcodeproj -scheme "$SCHEME" -destination "$DEST" test | tee test.log
+          fi
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-art
