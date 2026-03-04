@@ -1,26 +1,8 @@
-name: iOS CI
-
-on:
-  push:
-    branches: [ "main" ]
-
-jobs:
-  build:
-
-    runs-on: macos-latest
-
-    steps:
-
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Show Xcode version
-        run: xcodebuild -version
-
-      - name: Build iOS App
-        run: |
-          xcodebuild \
-          -project Fluffbotics.xcodeproj \
-          -scheme Fluffbotics \
-          -destination 'platform=iOS Simulator,name=iPhone 15' \
-          clean build
+- name: Build
+  run: |
+    xcodebuild \
+      -project Fluffbotics.xcodeproj \
+      -scheme Fluffbotics \
+      -sdk iphonesimulator \
+      -destination "platform=iOS Simulator,name=iPhone 16" \
+      clean build
